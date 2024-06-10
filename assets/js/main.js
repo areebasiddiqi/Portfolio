@@ -260,3 +260,12 @@ form.addEventListener("submit", (e) => {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function sendMessage(){
+  emailjs.send("service_1467l7q","template_5ntbh8u",{
+    senderemail: "hamis",
+    subject: "a345sf",
+    message: "s3453af",
+    sendername: "34534asf",
+    });
+}
