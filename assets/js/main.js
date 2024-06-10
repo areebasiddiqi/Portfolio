@@ -40,28 +40,6 @@
     const form = document.querySelector('form');
 
 
-function SendEmail(){
-
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "hamidsiddiqi888@gmail.com",
-    Password : "632C5550530EFE15059BA5DEDA3C243707E0",
-    To : 'hamidsiddiqi802@gmail.com',
-    From : "hamidsiddiqi888@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-    message => alert(message)
-  );
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  SendEmail();
-});
-
-  });
 
   /**
    * Toggle mobile nav dropdowns
