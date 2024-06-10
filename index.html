@@ -346,35 +346,34 @@
           </div>
         </div>
 
-        <form id="form" action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300" >
-          <input type="hidden" name="access_key" value="0104f345-74da-4c1d-a3ce-0b115280ac6e">
+        <form action="https://formspree.io/f/xoqggvqv" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
-
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" id="sendername" placeholder="Your Name" required="">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
 
             <div class="col-md-6 ">
-              <input type="email" class="form-control" id="senderemail" name="email" placeholder="Your Email" required="">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
             </div>
 
             <div class="col-md-12">
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
             </div>
 
             <div class="col-md-12">
-              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
             </div>
+
             <div class="col-md-12 text-center">
               <div class="loading">Loading</div>
-              <div id="errorMessage"></div>
-              <div class="sent-message" id="successMessage">Your message has been sent. Thank you!</div>
-            <input type="hidden" name="redirect" value="portfolio-details.html">
-            <button type="submit" name="submit">Send Message</button>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
             </div>
+
           </div>
-          <p class="text-base text-center text-gray-400" id="result"></p>
         </form><!-- End Contact Form -->
 
       </div>
@@ -419,7 +418,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
